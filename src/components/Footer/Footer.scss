@@ -1,0 +1,51 @@
+@import "../../assets/styles/index.scss";
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 25px;
+}
+
+
+.container-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.container-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid $grayColor;
+    border-radius: $borderRadius8;
+    cursor: pointer;
+}
+
+.container-icon:hover {
+    border: 2px solid $redColor;
+    .icon-footer {
+        color: $redColor;
+    }
+}
+
+.icon-footer {
+    color: $grayColor;
+    width: 15px;
+    height: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+    .icon-footer {
+        color: $grayColor;
+        width: 10px;
+        height: 10px;
+    }
+}
