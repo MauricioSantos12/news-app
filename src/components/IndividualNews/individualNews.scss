@@ -1,0 +1,27 @@
+@import "../../assets/styles/index.scss";
+
+.container-individual-new {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-individual-new > h4 {
+    color: $blackColor;
+    font-family: Poppins-Black;
+    font-size: 25px;
+    overflow:hidden;
+    text-align: center;
+    line-height: 2rem;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    margin: 15px 0px;
+}
+
+.icoLeft {
+    cursor: pointer;
+    color: $blackColor;
+    width: 40px;
+    margin: 0px 10px;
+}
