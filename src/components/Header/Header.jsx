@@ -10,10 +10,14 @@ const Header = () => {
   return (
     <div>
       <nav>
+        <div className='namePage'><p className='namePage'><a href="#" >Break News</a></p></div>
         <ul className={showMenu ? 'show': ''}>
-            <li onClick={()=> setShowMenu(false)}><a href="#" >About me</a></li>
-            <li onClick={()=> setShowMenu(false)}><a href="#" >Skills</a></li>
-            <li onClick={()=> setShowMenu(false)}><a href="#" >Projects</a></li>
+            <li onClick={()=> setShowMenu(false)}><a href="#" >World</a></li>
+            <li onClick={()=> setShowMenu(false)}><a href="#" >Bussines</a></li>
+            <li onClick={()=> setShowMenu(false)}><a href="#" >Economy</a></li>
+            <li onClick={()=> setShowMenu(false)}><a href="#" >Sports</a></li>
+            <li onClick={()=> setShowMenu(false)}><a href="#" >Scientific</a></li>
+            <div  className='v-line'/>
             <div className='containerSearch'>
               <p>Search</p>
               <Search className='iconSearch' />
